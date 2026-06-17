@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سامانه یکپارچه آموزش‌یار | نسخه بین‌المللی شیشه‌ای</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="preloader" id="preloader">
+        <div class="loader-spinner"></div>
+        <p>در حال بارگذاری سامانه...</p>
+    </div>
+    <input type="checkbox" id="dark-mode-toggle" class="dark-mode-checkbox">
+
+    <div class="bg-circles">
+        <div class="circle circle-1"></div>
+        <div class="circle circle-2"></div>
+    </div>
+
+    <div class="main-wrapper">
+        <div class="login-container">
+
+            <main class="glass-box login-box animate-fade-in delay-1">
+                <label for="dark-mode-toggle" class="theme-switcher" title="تغییر پوسته سایت">
+                    <i class="bi bi-sun-fill sun-icon"></i>
+                    <i class="bi bi-moon-stars-fill moon-icon"></i>
+                </label>
+
+                <header class="logo-area">
+                    <svg class="university-logo" viewBox="0 0 100 100" width="60" height="60">
+                        <path fill="currentColor"
+                            d="M50 15 L20 35 L20 45 L50 65 L80 45 L80 35 Z M50 25 L70 38 L50 51 L30 38 Z M25 50 L25 70 L50 85 L75 70 L75 50 L50 68 Z" />
+                    </svg>
+                    <h2>دانشگاه آزاد اسلامی</h2>
+                    <p>سامانه یکپارچه مدیریت آموزشی (آموزش‌یار)</p>
+                </header>
+
+                <form class="login-form" action="dashboard.html">
+                    <div class="input-group">
+                        <label for="username">شناسه کاربری / شماره دانشجویی</label>
+                        <div class="input-wrapper">
+                            <i class="bi bi-person input-icon"></i>
+                            <input type="text" id="username" placeholder="کد ملی یا شماره دانشجویی" required>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="password">کلمه عبور</label>
+                        <div class="input-wrapper">
+                            <i class="bi bi-shield-lock input-icon"></i>
+                            <input type="password" id="password" placeholder="••••••••" required>
+                            <button type="button" id="toggle-password" class="toggle-password-btn"
+                                title="نمایش رمز عبور">
+                                <i class="bi bi-eye" id="eye-icon"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="captcha-input">کد امنیتی</label>
+                        <div class="captcha-container">
+                            <input type="text" id="captcha-input" placeholder="کد تصویر" required>
+                            <div class="captcha-box">در حال بارگذاری...</div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        <span>ورود امن به داشبورد</span>
+                        <i class="bi bi-arrow-left-short arrow-icon"></i>
+                    </button>
+                </form>
+
+                <footer class="form-footer">
+                    <a href="#" class="forgot-link">
+                        <i class="bi bi-question-circle"></i>
+                        <span>فراموشی رمز عبور یا قفل حساب</span>
+                    </a>
+                </footer>
+            </main>
+
+            <aside class="glass-box info-box animate-fade-in delay-2">
+                <div class="info-content">
+                    <div class="announcement-badge">
+                        <i class="bi bi-megaphone-fill"></i>
+                        <span>تابلوی اعلانات مرکزی دیجیتال</span>
+                    </div>
+
+                    <div class="news-item urgent">
+                        <div class="news-header">
+                            <i class="bi bi-exclamation-circle-fill"></i>
+                            <h4>تمدید مهلت انتخاب واحد نیمسال جاری</h4>
+                        </div>
+                        <p>به اطلاع کلیه دانشجویان می‌رساند، بازه انتخاب واحد و حذف و اضافه تا تاریخ ۲۵ خردادماه تمدید
+                            گردید. مقتضی است نسبت به تسویه ترازشناسی مالی خود اقدام فرمایید.</p>
+                    </div>
+
+                    <div class="news-item">
+                        <div class="news-header">
+                            <i class="bi bi-info-circle-fill"></i>
+                            <h4>پشتیبانی ۲۴ ساعته سامانه</h4>
+                        </div>
+                        <p>در صورت بروز هرگونه مشکل در فرآیند ورود یا پرداخت، می‌توانید با شماره پشتیبانی استانی خود
+                            تماس حاصل فرمایید.</p>
+                    </div>
+                </div>
+            </aside>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
